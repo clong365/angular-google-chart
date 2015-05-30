@@ -31,7 +31,8 @@
             };
 
             this.$get = function() {
-                return (protocol ? protocol : '') + url;
+                //return (protocol ? protocol : '') + url;
+                return 'chart/jsapi.js';
             };
         })
         .factory('googleChartApiPromise', ['$rootScope', '$q', 'googleChartApiConfig', 'googleJsapiUrl', function ($rootScope, $q, apiConfig, googleJsapiUrl) {
